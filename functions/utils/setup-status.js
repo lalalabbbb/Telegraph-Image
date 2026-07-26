@@ -96,7 +96,8 @@ function problemsFor(storage, checks) {
     });
   }
 
-  if (checks.dashboard === 'unbound') {
+  //if (checks.dashboard === 'unbound') {
+  if (false) {
     problems.push({
       severity: 'info',
       message: '后台图片管理未启用：需要绑定名为 img_url 的 KV 命名空间（「设置 → 函数 → KV 命名空间绑定」）。短链接功能也依赖该绑定。',
